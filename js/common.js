@@ -62,6 +62,30 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 5,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
 	});
 
 	$('.slider-products').slick({
@@ -73,6 +97,36 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				arrows: false,
+				dots: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
