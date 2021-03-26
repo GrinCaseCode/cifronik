@@ -27,58 +27,43 @@
 
 		<header class="header">
 			<div class="container">
-				<div class="cols-wrap">
-					<div class="col-min">
-						<a href="#" class="logo">
-							<img src="img/logo.png" alt="alt">
-						</a>
+				<div class="header__top">
+					<div class="location-block">
+						<a href="#" class="location-value"><i class="far fa-map-marker-alt"></i><span>Феодосия</span></a>
 					</div>
-					<div class="col-medium">
-						<div class="header__center">
-							<div class="location-block">
-								<span>Ваш город:</span>
-								<div class="location-value"><span>Судак</span><i class="fas fa-chevron-down"></i></div>
-							</div>
-							<ul class="menu">
-								<li><a href="#">Акции</a></li>
-								<li><a href="#">Магазины</a></li>
-								<li><a href="#">Клиентам</a></li>
-								<li><a href="#">Бонусы</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-min">
-						<div class="align-right">
-							<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
-						</div>
-					</div>
+					<a href="#" class="link-header">Магазины</a>
+					<ul class="menu">
+						<li class="menu__btn"><a href="#">Акции</a></li>
+						<li><a href="#">Клиентам</a></li>
+						<li><a href="#">Бонусы</a></li>
+					</ul>
+					<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
 				</div>
-			</div>
-			<div class="header__bottom">
-				<div class="container">
-					<div class="cols-wrap">
-						<div class="col-min">
-							<a href="#" class="btn-catalog"><i class="fas fa-bars"></i><span>каталог товаров</span></a>
-						</div>
-						<div class="col-medium">
-							<div class="form-search">
-								<form>
-									<input type="text" placeholder="Поиск по сайту" required="required">
-									<button class="btn-search"><i class="far fa-search"></i></button>
-								</form>
-							</div>
-						</div>
-						<div class="col-min">
-							<div class="header-buttons">
-								<a href="#" class="btn-header btn-header_user"><img src="img/user.svg" alt="alt"></a>
-								<a href="#" class="btn-header btn-header_like"><img src="img/like.svg" alt="alt"></a>
-								<a href="#" class="btn-basket">
-									<img src="img/cart.svg" alt="alt">
-									<span class="btn-basket__value">2</span>
-									<span class="btn-basket__price">35 000 ₽</span>
-								</a>
-							</div>
-						</div>
+				<div class="header__bottom">
+					<a href="#" class="logo">
+						<img src="img/logo2.png" alt="alt">
+					</a>
+					<a href="#" class="btn-catalog"><i class="fas fa-bars"></i><span>каталог</span></a>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Поиск по сайту" required="required">
+							<button class="btn-search"><i class="far fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-min header-buttons">
+						<a href="#" class="btn-header btn-header_user">
+							<img src="img/user.svg" alt="alt">
+							<span class="btn-header__text">Вход</span>
+						</a>
+						<a href="#" class="btn-header btn-header_like">
+							<img src="img/like.svg" alt="alt">
+							<span class="btn-header__text">Избранное</span>
+						</a>
+						<a href="#" class="btn-header btn-header_basket">
+							<img src="img/cart.svg" alt="alt">
+							<span class="btn-header__text">Корзина</span>
+							<span class="btn-basket__value">2</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -89,14 +74,14 @@
 				<div class="cols-wrap">
 					<div class="col-min">
 						<ul class="list-catalog">
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog1.svg" alt="alt"></span>Смартфоны и телефоны</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog3.svg" alt="alt"></span>Наушники, колонки и аудио</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog4.svg" alt="alt"></span>Аксессуары</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.svg" alt="alt"></span>Гаджеты для дома</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog6.svg" alt="alt"></span>Планшеты и ноутбуки</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog7.svg" alt="alt"></span>Телевизоры и видео</a></li>
-							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog8.svg" alt="alt"></span>Автотовары и электротранспорт </a></li>
+							<li class="active"><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog1.svg" alt="alt"></span>Смартфоны и телефоны <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog3.svg" alt="alt"></span>Наушники, колонки и аудио <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog4.svg" alt="alt"></span>Аксессуары <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.svg" alt="alt"></span>Гаджеты для дома <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog6.svg" alt="alt"></span>Планшеты и ноутбуки <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog7.svg" alt="alt"></span>Телевизоры и видео <i class="far fa-chevron-right"></i></a></li>
+							<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog8.svg" alt="alt"></span>Автотовары и электротранспорт  <i class="far fa-chevron-right"></i></a></li>
 						</ul>
 					</div>
 					<div class="col-big">
@@ -167,6 +152,12 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="brands">
+			<div class="container">
+				<div class="title-section">Популярные бренды</div>
 				<ul class="slider-brands arrows_main">
 					<li>
 						<a href="#" class="slider-brands__item">
@@ -203,10 +194,124 @@
 							<img src="img/brand7.png" alt="alt">
 						</a>
 					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="products">
+			<div class="container">
+				<div class="header-section">
+					<div class="title-section">Хит продаж</div>
+					<a href="#" class="link-block">Все товары</a>
+				</div>
+				<ul class="slider-products arrows_main">
 					<li>
-						<a href="#" class="slider-brands__item">
-							<img src="img/brand1.png" alt="alt">
-						</a>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status">Скидка</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -214,21 +319,24 @@
 
 		<div class="products">
 			<div class="container">
-				<div class="title-section title-section_main">Хит продаж</div>
+				<div class="header-section">
+					<div class="title-section">Новинки</div>
+					<a href="#" class="link-block">Все товары</a>
+				</div>
 				<ul class="slider-products arrows_main">
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Новинка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -236,17 +344,17 @@
 					</li>
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Новинка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -254,17 +362,17 @@
 					</li>
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Новинка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -272,17 +380,17 @@
 					</li>
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Новинка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -290,17 +398,17 @@
 					</li>
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Новинка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -308,17 +416,17 @@
 					</li>
 					<li>
 						<div class="item-product">
-							<div class="item-product__status">хит</div>
+							<div class="item-product__status item-product__status_new">Скидка</div>
 							<a href="#" class="btn-like"></a>
 							<a href="#" class="item-product__image">
 								<img src="img/product1.jpg" alt="alt">
 							</a>
-							<a href="#" class="item-product__name">Смартфон <br>Xiaomi Redmi Note 8 Pro <br>6/128GB Синий</a>
-							<div class="availability"><span>Есть в наличии</span></div>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
 							<div class="item-product__price">
-								<div class="price-old">17 480 ₽</div>
 								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
 							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
 							<div class="item-product__bottom">
 								<a href="#" class="btn-main">В корзину</a>
 							</div>
@@ -328,7 +436,294 @@
 			</div>
 		</div>
 
+		<div class="products">
+			<div class="container">
+				<div class="header-section">
+					<div class="title-section">Смартфоны XIAOMI</div>
+					<a href="#" class="link-block">Все товары</a>
+				</div>
+				<ul class="slider-products arrows_main">
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-product">
+							<div class="item-product__status item-product__status_action">Цена по акции</div>
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-product__image">
+								<img src="img/product1.jpg" alt="alt">
+							</a>
+							<a href="#" class="item-product__name">Смартфон Xiaomi Redmi Note 8 Pro 6/128GB ...</a>
+							<div class="item-product__price">
+								<div class="price-new">17 480 ₽</div>
+								<div class="price-old">17 480 ₽</div>
+							</div>
+							<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+							<div class="item-product__bottom">
+								<a href="#" class="btn-main">В корзину</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 
+		<div class="advantages">
+			<div class="container">
+				<div class="title-section">Почему выбирают именно нас:</div>
+				<div class="row row_advantages">
+					<div class="col-lg-3 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd1.png" alt="alt">
+							</div>
+							<strong>Более 15</strong>
+							<p>Магазинов по всему Крыму</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd2.png" alt="alt">
+							</div>
+							<strong>Более 100 000</strong>
+							<p>Наименований товаров</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd3.png" alt="alt">
+							</div>
+							<strong>Гарантия</strong>
+							<p>Официальные поставки</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd4.png" alt="alt">
+							</div>
+							<strong>Оплата</strong>
+							<p>Любые способы</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="news">
+			<div class="container">
+				<div class="header-section">
+					<div class="title-section">Последние новости</div>
+					<a href="#" class="link-main">Все новости</a>
+				</div>
+				<div class="wrap-news">
+					<a href="#" class="item-news">
+						<span class="item-news__image">
+							<img src="img/news1.jpg" alt="alt">
+						</span>
+						<span class="item-news__title">Новинка! Смартфон OPPO A15s</span>
+						<span class="item-news__text">Смартфон A15s получил тройную основную камеру с искусственным интеллектом, яркий большой экран и мощный аккумулятор. </span>
+					</a>
+					<a href="#" class="item-news">
+						<span class="item-news__image">
+							<img src="img/news2.jpg" alt="alt">
+						</span>
+						<span class="item-news__title">Капсула + Xiaomi = умный дом</span>
+						<span class="item-news__text">Пользователям умной колонки Капсула от Mail.ru Group с голосовым помощником Маруся стало доступно управление умными устройствами от Xiaomi.</span>
+					</a>
+					<a href="#" class="item-news">
+						<span class="item-news__image">
+							<img src="img/news3.jpg" alt="alt">
+						</span>
+						<span class="item-news__title">Топ-7 роботов-пылесосов 2020 — 2021</span>
+						<span class="item-news__text">Покупая новую технику, мы обязательно изучаем все её основные характеристики, параметры, функции и прочее. И лишь после этого, очертив для себя ...</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="subscribe">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-4 col-lg-6">
+						<div class="subscribe__title">Получайте самые интересные предложения первыми!</div>
+					</div>
+					<div class="col-xl-4 col-lg-6">
+						<form>
+							<div class="form-subscribe">
+								<div class="item-form">
+									<input type="emai" placeholder="Введите E-mail" required="required">
+								</div>
+								<button class="btn-main" type="submit">Подписаться</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<div class="footer__col footer__col_first">
+						<a href="#" class="logo">
+							<img src="img/logo3.png" alt="alt">
+						</a>
+						<p><a href="#">Политика конфиденциальности</a></p>
+						<p>Все права защищены</p>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Цифроник <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Магазины</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Клиентам <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">Бонусная программа</a></li>
+								<li><a href="#">Подарочные карты</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Покупка в кредит</a></li>
+								<li><a href="#">Гарантия и обмен</a></li>
+								<li><a href="#">Trade-in</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">каталог <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">Смартфоны и телефоны</a></li>
+								<li><a href="#">Смарт-часы</a></li>
+								<li><a href="#">Наушники, колонки и аудио</a></li>
+								<li><a href="#">Аксессуары</a></li>
+								<li><a href="#">Гаджеты для дома</a></li>
+								<li><a href="#">Планшеты и ноутбуки</a></li>
+								<li><a href="#">Телевизоры и видео</a></li>
+								<li><a href="#">Автотовары и электротранспорт</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Контакты <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
+							<br>
+							<br>
+							<p>График работы: <br>с 9:00 до 19:00, <br>без выходных</p>
+							<div class="title-social">Мы в соцсетях</div>
+							<ul class="social-list">
+								<li><a href="#"><i class="fab fa-vk"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<p>г. Симферополь © Copyright  2021 г.</p>
+					<a href="#" class="btn_top"><i class="fa fa-arrow-up"></i></a>
+				</div>
+			</div>
+		</footer>
 		
 	</div>
 
