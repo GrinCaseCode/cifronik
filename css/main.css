@@ -1,7 +1,7 @@
 *::-webkit-input-placeholder {
 	color: #666;
 	opacity: 1;
-}
+} 
 *:-moz-placeholder {
 	color: #666;
 	opacity: 1;
@@ -97,7 +97,6 @@ p {
 	border-color: transparent;
 }
 .location-value i {
-	margin-left: 15px;
 	color: #812990;
 	font-size: 10px;
 }
@@ -218,6 +217,10 @@ color: #fff;
 	right: 0;
 	border: none;
 	padding: 0;
+	transition: all 0.3s;
+}
+.btn-search:hover {
+	background-color: #3e383f;
 }
 .header-buttons {
 	padding-left: 25px;
@@ -630,6 +633,7 @@ border-radius: 6px;
 }
 .bonus-product span {
 	color: #e70082;
+	white-space: nowrap;
 }
 .item-product__bottom {
 	padding: 0 22px;
@@ -917,6 +921,10 @@ border: none;
 	display: block;
 	color: #000;
 	width: 100%;
+	transition: all 0.3s;
+}
+.btn-header:hover .btn-header__text {
+	color: #812990;
 }
 
 .header-buttons {
@@ -1104,3 +1112,83 @@ transition: all 0.3s;
 .row_banners .banner__bottom {
 	padding-left: 34px;
 }
+/*Style Sandwich*/
+.btn_nav {
+	border: none;
+	z-index: 60;
+	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	vertical-align: middle;
+	position: relative;
+}
+.btn_nav:hover {
+	opacity: 1;
+} 
+.sandwich span {
+	display: block;
+}
+.sandwich {
+	width: 30px;
+	height:28px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 20;
+	cursor: pointer;
+}
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+	position: relative;
+	top: 10px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s;
+}
+.sw-footer {
+	position: relative;
+	top: 17px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	background-color: #000;
+	border: medium none;
+	transition: all 0.5s;
+	transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+	top: 12px;
+	transform: rotate(45deg);
+}
+.sandwich.active .sw-bottom {
+	opacity: 0;
+} 
+.sandwich.active .sw-footer {
+	top:8px;
+	width: 30px;
+	transform: rotate(-45deg);
+}
+
+/*End Sandwich*/

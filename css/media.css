@@ -4,7 +4,361 @@
     width: 44%;
 }
 }
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.form-search {
+    width: 35%;
+}
+.menu {
+    margin-right: 58px; 
+    }
+    .banner__title {
+    font-size: 16px;
+    line-height: 23px;
+}
+.banner {
+	padding-left: 8px;
+}
+.sale-circle {
+	top: 5px;
+	right: 5px;
+}
+.banner__name {
+    font-size: 24px;
+    margin-bottom: 4px;
+    padding-right: 58px;
+    }
+    .row_banners .banner__bottom,
+    .col-md-6 .banner {
+    padding-left: 11px;
+}
+.col-md-6 .banner__title {
+    max-width: 156px;
+}
+.item-advantage__icon {
+    width: 55px;
+}
+.item-advantage {
+	padding-left: 62px;
+	font-size: 16px;
+}
+.wrap-news .item-news {
+    width: 33%;
+}
+}
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.list-catalog,
+.header__bottom .form-search {
+	display: none;
+}
+.cols-wrap {
+	display: block;
+	margin: 0;
+}
+.col-big,
+.col-min,
+.col-mediummin,
+.col-mediumbig {
+	width: 100%;
+	padding: 0;
+}
+.location-block {
+    margin-right: 25px;
+}
+.menu {
+    margin-right: 20px;
+}
+.header-buttons {
+	max-width: 35%;
+	margin-left: auto;
+}
+.banner {
+	min-height: 250px;
+}
+.banner_1 {
+	margin-top: 15px;
+	background-size: inherit;
+}
+.slider-brands .slick-prev {
+    left: -39px;
+}
+.slider-brands .slick-next {
+    left: -39px;
+}
+.item-news {
+padding: 10px;
+}
+.item-news__image {
+    height: 180px;
+    margin-bottom: 19px;
+    }
+    .subscribe__title {
+    	padding-bottom: 20px;
+    }
+    .form-subscribe {
+    	max-width: 450px;
+    }
+    .footer {
+    	font-size: 14px;
+    	line-height: 21px;
+    }
+    .footer__list li {
+    margin-bottom: 12px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .btn-catalog,
+	.header-buttons,
+	.header__top {
+	display: none;
+}
+.header__bottom {
+	padding: 0;
+}
+.footer__wrap {
+	display: block;
+	margin: 0;
+}
+.footer__col {
+	width: 100%;
+	padding: 0;
+}
+.footer__content {
+    padding-top: 15px;
+	display: none;
+}
+.footer__title {
+	margin: 0;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+}
+.footer__title i {
+	display: block;
+	transition: all 0.3s;
+	font-size: 15px;
+}
+.footer__title.active i {
+	transform: rotate(45deg);
+}
+.footer__col_first p {
+	display: none;
+}
+.footer__col_first {
+	text-align: center;
+}
+.footer__bottom {
+	margin-top: 25px;
+	border: none;
+}
+.item-product__bottom {
+	position: relative;
+	min-height: auto;
+	padding: 0;
+	opacity: 1;
+}
+.slider-products .item-product {
+	padding-bottom: 20px;
+}
+.slider-billbord__title {
+    font-size: 26px;
+    line-height: 34px;
+    padding-top: 15px;
+    max-width: 284px;
+    }
+    .slider-billbord__item {
+    	padding-left: 34px;
+    	height: 330px;
+    }
+    .slider-billbord__descr {
+    font-size: 16px;
+    padding-top: 14px;
+}
+.banner__title {
+	max-width: 300px;
+}
+.slider-brands {
+	padding-bottom: 30px;
+}
+.slider-products {
+	padding-bottom:10px;
+}
+.header-section {
+    padding-bottom: 6px;
+}
+.products {
+	padding-top: 20px;
+}
+.brands {
+    padding-top: 14px;
+    padding-bottom: 18px;
+}
+.title-section {
+    font-size: 21px;
+}
+.billbord {
+	padding-bottom: 15px;
+}
+.advantages .title-section {
+    padding-bottom: 15px;
+}
+.advantages {
+	padding-top: 25px;
+}
+.wrap-news {
+	display: block;
+}
+.wrap-news .item-news {
+	width: 100%;
+}
+.news {
+	padding-bottom: 30px;
+}
+.btn_nav {
+    display: inline-block;
+}
+.wrapper {
+    padding-top: 68px;
+}
+.header {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+.menu-mobile {
+    padding: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 90px;
+    display: none;
+    background-color: #fff;
+}
+.logo img {
+    width: 140px;
+    }
+.menu-mobile .list-catalog {
+    padding-bottom: 15px;
+    display: block;
+}
+.menu-mobile .menu {
+    margin: 20px 0;
+}
+.menu-mobile .list-catalog a {
+    height: 58px;
+}
+.phone-btn {
+    margin-left: auto;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.slider-billbord__title {
+    font-size: 21px;
+    line-height: 28px;
+    padding-top: 15px;
+    max-width: 227px;
+}
+.slider-billbord__descr {
+    font-size: 14px;
+    padding-top: 10px;
+    max-width: 160px;
+}
+.banner__title {
+    max-width: 216px;
+}
+.row_banners > div {
+	margin-top: 15px;
+}
+.header-section {
+	display: block;
+}
+.header-section .link-block {
+	margin-top: 15px;
+	display: inline-block;
+}
+.products {
+    padding-top: 26px;
+}
+.item-news {
+	padding: 0 !important;
+	box-shadow: none !important;
+}
+.subscribe__title {
+    font-size: 18px;
+    line-height: 27px;
+    }
+    .subscribe {
+    	padding: 30px 0;
+    }
+    .footer__bottom {
+    	font-size: 13px;
+    }
+    .slider-billbord__item {
+    	padding-top: 25px;
+    	height: 305px;
+    }
+    .item-product {
+        box-shadow: 0px 4px 10px 0px rgb(200 200 200 / 30%);
+}
+.slider-products {
+    padding-bottom: 20px;
+}
+.advantages {
+    padding-bottom: 30px;
+}
+.item-advantage__icon {
+    position: relative;
+    height: 40px;
+    justify-content: flex-start;
+    width: 100%;
+}
+.item-advantage {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.row_advantages {
+    margin: 0 -5px;
+}
+.row_advantages > div {
+    padding: 0 5px;
+}
+.item-advantage p {
+    font-size: 13px;
+    line-height: 18px;
+}
+.item-advantage strong {
+    margin: 10px 0;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+.form-subscribe .btn-main {
+    padding: 0 15px;
+}
+.form-subscribe .item-form input {
+    padding-left: 15px;
+    padding-right: 25px;
+}
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
@@ -26,7 +380,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+    .phone-btn,
+.menu-mobile {
+    display: none !important;
+}
+.footer__content {
+    display: block !important;
+}
 }
 
 /* Medium Devices, Desktops */
