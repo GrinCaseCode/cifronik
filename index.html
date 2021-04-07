@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body>
 
@@ -34,7 +34,14 @@
 					<a href="#" class="link-header">Магазины</a>
 					<ul class="menu">
 						<li class="menu__btn"><a href="#">Акции</a></li>
-						<li><a href="#">Клиентам</a></li>
+						<li class="menu__haschild">
+							<a href="#">Клиентам</a>
+							<ul>
+								<li><a href="#">Клиентам 1</a></li>
+								<li><a href="#">Клиентам 2</a></li>
+								<li><a href="#">Клиентам 3</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Бонусы</a></li>
 					</ul>
 					<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
@@ -76,6 +83,21 @@
 				</div>
 			</div>
 			<div class="menu-mobile">
+				<div class="header-buttons">
+					<a href="#" class="btn-header btn-header_user">
+						<img src="img/user.svg" alt="alt">
+						<span class="btn-header__text">Вход</span>
+					</a>
+					<a href="#" class="btn-header btn-header_like">
+						<img src="img/like.svg" alt="alt">
+						<span class="btn-header__text">Избранное</span>
+					</a>
+					<a href="#" class="btn-header btn-header_basket">
+						<img src="img/cart.svg" alt="alt">
+						<span class="btn-header__text">Корзина</span>
+						<span class="btn-basket__value">2</span>
+					</a>
+				</div>
 				<ul class="list-catalog">
 					<li class="active"><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog1.svg" alt="alt"></span>Смартфоны и телефоны <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы <i class="far fa-chevron-right"></i></a></li>
@@ -92,25 +114,18 @@
 				<a href="#" class="link-header">Магазины</a>
 				<ul class="menu">
 					<li class="menu__btn"><a href="#">Акции</a></li>
-					<li><a href="#">Клиентам</a></li>
+					<li class="menu__haschild">
+						<a href="#">Клиентам</a>
+						<ul>
+							<li><a href="#">Клиентам 1</a></li>
+							<li><a href="#">Клиентам 2</a></li>
+							<li><a href="#">Клиентам 3</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Бонусы</a></li>
 				</ul>
 				<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
-				<div class="header-buttons">
-					<a href="#" class="btn-header btn-header_user">
-						<img src="img/user.svg" alt="alt">
-						<span class="btn-header__text">Вход</span>
-					</a>
-					<a href="#" class="btn-header btn-header_like">
-						<img src="img/like.svg" alt="alt">
-						<span class="btn-header__text">Избранное</span>
-					</a>
-					<a href="#" class="btn-header btn-header_basket">
-						<img src="img/cart.svg" alt="alt">
-						<span class="btn-header__text">Корзина</span>
-						<span class="btn-basket__value">2</span>
-					</a>
-				</div>
+				
 			</div>
 		</header>
 
@@ -602,42 +617,41 @@
 
 		<div class="advantages">
 			<div class="container">
-				<div class="title-section">Почему выбирают именно нас:</div>
 				<div class="row row_advantages">
 					<div class="col-lg-3 col-6">
 						<div class="item-advantage">
 							<div class="item-advantage__icon">
-								<img src="img/ic_avd1.png" alt="alt">
+								<img src="img/ic_avd1_1.png" alt="alt">
 							</div>
-							<strong>Более 15</strong>
-							<p>Магазинов по всему Крыму</p>
+							<strong>Ассортимент</strong>
+							<p>Расширенный ассортимент всех линеек товаров</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-6">
 						<div class="item-advantage">
 							<div class="item-advantage__icon">
-								<img src="img/ic_avd2.png" alt="alt">
-							</div>
-							<strong>Более 100 000</strong>
-							<p>Наименований товаров</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-6">
-						<div class="item-advantage">
-							<div class="item-advantage__icon">
-								<img src="img/ic_avd3.png" alt="alt">
+								<img src="img/ic_avd2_1.png" alt="alt">
 							</div>
 							<strong>Гарантия</strong>
-							<p>Официальные поставки</p>
+							<p>Сертифицированная техника с оф<span>-</span>ициальной гарантией от производителя</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd3_1.png" alt="alt">
+							</div>
+							<strong>Самовывоз через 15 минут</strong>
+							<p>Самовывоз из любого магазина “Цифроник”</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-6"> 
 						<div class="item-advantage">
 							<div class="item-advantage__icon">
-								<img src="img/ic_avd4.png" alt="alt">
+								<img src="img/ic_avd4_1.png" alt="alt">
 							</div>
 							<strong>Оплата</strong>
-							<p>Любые способы</p>
+							<p>Оплатить покупку можно <br>наличными или картой</p>
 						</div>
 					</div>
 				</div>
@@ -785,7 +799,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.2"></script>
+<script src="js/common.js?ver=1.4"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
