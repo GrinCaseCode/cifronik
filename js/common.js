@@ -19,7 +19,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 }
 
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".nav-page li a").mPageScroll2id({
+		offset: 70
+	});
 
 
 	//кнопка sandwich
@@ -34,9 +36,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		
 	});
 
-	$(".menu-mobile a").click(function() {
+	$(".menu-mobile *:not(.menu__haschild) > a").click(function() {
 		$(".menu-mobile").slideUp(200);
 		$(".sandwich").removeClass("active");
+	});
+
+	$(".menu__haschild > a").click(function(e) {
+		e.preventDefault();
+		$(this).siblings("ul").slideToggle(200);
+	});
+
+	$(".menu ul").click(function() {
+		$(this).slideUp(200);
 	});
 
 
