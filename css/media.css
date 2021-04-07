@@ -487,9 +487,17 @@ max-width: 300px;
     padding-top: 25px;
     }
     .news-page {
-    padding-bottom: 38px;
+    padding-bottom: 38px; 
 }
-
+.contacts-block {
+    padding: 20px 15px;
+    }
+    #map {
+        height: 360px;
+    } 
+    .title-main {
+    font-size: 25px;
+}
 }
 
 /* Custom, iPhone Retina */
