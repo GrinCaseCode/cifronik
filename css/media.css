@@ -147,7 +147,10 @@ padding: 10px;
     width: 100%;
     padding: 0;
 }
-
+.contacts-block {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -497,6 +500,9 @@ max-width: 300px;
     } 
     .title-main {
     font-size: 25px;
+}
+.contacts {
+    padding-bottom: 40px;
 }
 }
 
