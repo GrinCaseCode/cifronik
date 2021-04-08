@@ -414,6 +414,9 @@ max-width: 300px;
 .products_bottom { 
     padding-bottom: 30px;
 }
+.item-product .btn-like {
+    opacity: 1;
+}
 }
 
 
