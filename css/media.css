@@ -67,6 +67,9 @@
 .contacts-block {
     padding: 20px 10px;
     }
+    .card-info td:first-child {
+    width: 305px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -150,6 +153,32 @@ padding: 10px;
 .contacts-block {
     max-width: 100%;
     margin-bottom: 30px;
+}
+.col_for {
+    order: -1;
+}
+.slider-for {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.slider-nav {
+    margin: 0;
+    margin-bottom: 20px;    
+}
+.card-info {
+    padding-bottom: 0;  
+}
+.slider-nav__item {
+    margin: 0 auto; 
+}
+.card .item-product__status {
+    left: 15px;    
+}
+.card .title-page {
+    padding-bottom: 30px;   
+}
+.card-info .title-main {
+    padding-top: 25px;
 }
 }
 
@@ -352,6 +381,36 @@ max-width: 300px;
 .page-numbers.next {
     margin-left: 15px;
 }
+.slider-for__item {
+    height: 300px;  
+}
+.slider-for__item img {
+    max-height: 100%;
+}
+.status-card {
+    margin: 15px 0; 
+}
+.card__title_color {
+    padding-top: 10px;
+}
+.card {
+    padding-bottom: 13px;
+}
+.card-info td:first-child {
+    width: 230px;
+}
+.row_products .item-product {
+    padding-bottom: 20px;
+}
+.row_products {
+    margin: 0 -5px;
+}
+.row_products > div {
+    padding: 0 5px;
+}
+.card-info {
+    padding-top: 25px;
+}
 }
 
 
@@ -503,6 +562,42 @@ max-width: 300px;
 }
 .contacts {
     padding-bottom: 40px;
+}
+.title-page {
+    font-size: 22px;
+    line-height: 33px;
+}
+.slider-nav__item {
+    width: 60px;
+    height: 60px;
+}
+.card__price {
+    font-size: 29px;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    }
+    .card__oldprice {
+    font-size: 16px;
+}
+.table-wrap table td {
+    padding: 4px 11px;
+}
+.table-wrap table {
+    font-size: 12px;
+    line-height: 22px;
+}
+.card-info td:first-child {
+    width: 162px;
+}
+.table-wrap table thead {
+    font-size: 14px;
+}
+.row_products > div {
+    margin-top: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 }
 

@@ -65,6 +65,12 @@ $(".footer__title").click(function() {
 		$(this).toggleClass("active");
 		$(this).siblings(".footer__content").slideToggle(200);
 	});
+
+
+$(".choose-value li").click(function() {
+		$(this).addClass("active");
+		$(this).siblings("li").removeClass("active");
+	});
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -150,6 +156,43 @@ $(".footer__title").click(function() {
 				slidesToShow: 1,
 				arrows: false,
 				dots: true,
+			}
+		}
+		]
+	});
+
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		 verticalSwiping: true,
+		 vertical: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		 focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				verticalSwiping: false,
+		 vertical: false,
 			}
 		}
 		]
