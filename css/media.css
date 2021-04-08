@@ -410,6 +410,9 @@ max-width: 300px;
 }
 .card-info {
     padding-top: 25px;
+} 
+.products_bottom { 
+    padding-bottom: 30px;
 }
 }
 
