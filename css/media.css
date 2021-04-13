@@ -70,6 +70,17 @@
     .card-info td:first-child {
     width: 305px;
 }
+/*new pages*/
+.trade-in__imagetext {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.steps-block__number {
+    margin-right: 15px;
+}
+.steps-block {
+    padding: 25px 20px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -179,6 +190,23 @@ padding: 10px;
 }
 .card-info .title-main {
     padding-top: 25px;
+}
+/*new pages*/
+#map {
+    height: 500px;
+}
+.trade-in__imagetext {
+    display: none;
+}
+.steps-block__item {
+    max-width: 100%;
+}
+.trade-in__image {
+    height: 350px;
+    margin-top: 25px;
+}
+.delivery {
+    padding-bottom: 50px;
 }
 }
 
@@ -414,9 +442,41 @@ max-width: 300px;
 .products_bottom { 
     padding-bottom: 30px;
 }
-.item-product .btn-like {
+.item-product .btn-like { 
     opacity: 1;
 }
+/*new pages*/
+.item-contact__title {
+    font-size: 20px;
+}
+#map {
+    height: 400px;
+}
+.steps-block__item {
+    font-size: 16px;
+}
+.trade-in__image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: inherit;
+    font-family: serif;
+}
+.trade-in__image {
+    height: auto;
+}
+.questions {
+    padding-top: 30px;
+}
+.item-question__name {
+    padding-left: 15px;
+    font-size: 17px;
+    }
+    .item-question__content {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 
@@ -604,6 +664,42 @@ max-width: 300px;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+}
+/*new pages*/
+.item-contact__title {
+    font-size: 17px;
+    padding-left: 20px;
+}
+.item-contact__content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.steps-block__number { 
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.steps-block {
+    padding: 20px 15px;
+}
+.steps-block__item {
+    font-size: 14px;
+}
+.delivery-block {
+    padding: 25px 20px;
+}
+.delivery-block__content {
+    display: block;
+}
+.delivery-block__content strong {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.delivery-block__content p {
+    font-size: 14px;
+}
+.delivery-block .title-section {
+    padding-bottom: 15px;
 }
 }
 
