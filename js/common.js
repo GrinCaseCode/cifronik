@@ -154,6 +154,22 @@ $(".choose-value li").click(function() {
 		$(this).addClass("active");
 		$(this).siblings("li").removeClass("active");
 	});
+
+$('.tabs-card a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().siblings(".tab-container-card").find(".tab-pane-card").removeClass("active");
+		var selectTab = $(this).attr("href");
+		$(selectTab).addClass("active");
+	});
+
+/*input file*/
+  $("input[type='file']").change(function(){
+    var filename_text = $(this).parent().siblings(".name-upload");
+    var filename = $(this).val().replace(/.*\\/, "");
+    filename_text.html(filename);
+  });
 	//слайдер
 
 	$('.slider-billbord').slick({
