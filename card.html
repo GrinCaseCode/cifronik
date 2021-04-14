@@ -19,11 +19,11 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.12" />
-	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+	<link rel="stylesheet" href="css/main.css?ver=1.13" />
+	<link rel="stylesheet" href="css/media.css?ver=1.13" />
 </head>
 <body>
-
+ 
 	<div class="wrapper">
 
 		<header class="header">
@@ -357,84 +357,174 @@
 
 		<div class="card-info">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="card-info__head">
-							<span>Характеристики</span>
-						</div>
-						<div class="table-wrap">
-							<table>
-								<thead>
-									<tr>
-										<td colspan="2">Операционная система</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Операционная система</td>
-										<td>Android 11</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="table-wrap">
-							<table>
-								<thead>
-									<tr>
-										<td colspan="2">Экран</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Экран</td>
-										<td>6.2"/2400x1080 Пикс</td>
-									</tr>
-									<tr>
-										<td>Технология экрана</td>
-										<td>Dynamic AMOLED 2X</td>
-									</tr>
-									<tr>
-										<td>Частота обновления</td>
-										<td>120 Гц</td>
-									</tr>
-									<tr>
-										<td>Безрамочный</td>
-										<td>Да</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="table-wrap">
-							<table>
-								<thead>
-									<tr>
-										<td colspan="2">Основная камера</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Основная камера МПикс</td>
-										<td>64/12/12</td>
-									</tr>
-									<tr>
-										<td>Количество основных камер</td>
-										<td>3 шт</td>
-									</tr>
-									<tr>
-										<td>Разрешение видеосъемки</td>
-										<td>7680x4320 Пикс (8K)</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="card-info__link">
-							<a href="#" class="link-block">Показать все характеристики</a>
+				<ul class="tabs-card">
+					<li class="active"><a href="#tab_card1">Характеристики</a></li>
+					<li><a href="#tab_card2">Отзывы</a></li>
+					<li><a href="#tab_card3">Аксессуары</a></li>
+				</ul>
+				<div class="tab-container-card">
+					<div class="tab-pane-card active" id="tab_card1">
+						<div class="row">
+							<div class="col-xl-9 col-lg-8">
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<td colspan="2">Операционная система</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Операционная система</td>
+												<td>Android 11</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<td colspan="2">Экран</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Экран</td>
+												<td>6.2"/2400x1080 Пикс</td>
+											</tr>
+											<tr>
+												<td>Технология экрана</td>
+												<td>Dynamic AMOLED 2X</td>
+											</tr>
+											<tr>
+												<td>Частота обновления</td>
+												<td>120 Гц</td>
+											</tr>
+											<tr>
+												<td>Безрамочный</td>
+												<td>Да</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<td colspan="2">Основная камера</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Основная камера МПикс</td>
+												<td>64/12/12</td>
+											</tr>
+											<tr>
+												<td>Количество основных камер</td>
+												<td>3 шт</td>
+											</tr>
+											<tr>
+												<td>Разрешение видеосъемки</td>
+												<td>7680x4320 Пикс (8K)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="card-info__link">
+									<a href="#" class="link-block">Показать все характеристики</a>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4">
+								<div class="title-section">Вместе дешевле</div>
+								<div class="complect-wrap">
+									<div class="item-min-product">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span></span>
+											</label>
+										</div>
+										<a href="#" class="item-min-product__image">
+											<img src="img/item_min1.jpg" alt="alt">
+										</a>
+										<div class="item-min-product__content">
+											<a href="#" class="item-min-product__name">ESET NOD32 Mobile Security 1год-1 устр ...</a>
+											<div class="item-min-product__bottom">
+												<div class="item-min-product__price">349 ₽</div>
+												<div class="item-min-product__oldprice">540 ₽</div>
+											</div>
+										</div>
+									</div>
+									<div class="icon-complect">+</div>
+									<div class="item-min-product">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span></span>
+											</label>
+										</div>
+										<a href="#" class="item-min-product__image">
+											<img src="img/item_min2.jpg" alt="alt">
+										</a>
+										<div class="item-min-product__content">
+											<a href="#" class="item-min-product__name">Смартфон Xiaomi Redmi 9C 2/32GB, синий ...</a>
+											<div class="item-min-product__bottom">
+												<div class="item-min-product__price">9 490 ₽</div>
+												<div class="item-min-product__oldprice">10 000 ₽</div>
+											</div>
+										</div>
+									</div>
+									<div class="complect-wrap__bottom">
+										<div class="icon-complect">=</div>
+										<div class="complect-price"><div class="benefit-price">Выгода <strong>160 ₽</strong></div>9 679 ₽</div>
+										<div class="complect-oldprice">9 839 ₽</div>
+									</div>
+								</div>
+								<div class="card__btns">
+									<a href="#" class="btn-main">Купить комплект</a>
+									<a href="#" class="btn-like"></a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-5">
-						<div class="title-main">Аксессуары</div>
-						<div class="row row_products">
-							<div class="col-6">
+					<div class="tab-pane-card" id="tab_card2">
+						<div class="reviews-wrap">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+					<div class="tab-pane-card" id="tab_card3">
+						<ul class="tags-list">
+							<li><a href="#">Популярные</a></li>
+							<li><a href="#">Стекло защитное для мобильного устройства</a></li>
+							<li><a href="#">Наушники вкладыши беспроводные TWS </a></li>
+							<li><a href="#">Чехол для мобильного устройства</a></li>
+							<li><a href="#">Батарея мобильная</a></li>
+							<li><a href="#">З/устройство для мобильного устройства</a></li>
+							<li><a href="#">Наушники вкладыши проводные</a></li>
+							<li><a href="#">Стартовые пакеты</a></li>
+							<li><a href="#">Наушники вкладыши беспроводные</a></li>
+						</ul>
+						<ul class="slider-products arrows_main">
+							<li>
+								<div class="item-product">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-product__image">
+										<img src="img/accessory2.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-product__name">Карта памяти Kingston micro SDHC 8 Gb...</a>
+									<div class="item-product__price">
+										<div class="price-new">360 ₽</div>
+										<div class="price-old">540 ₽</div>
+									</div>
+									<div class="bonus-product"><span>+500</span> бонусных рублей </div>
+									<div class="item-product__bottom">
+										<a href="#" class="btn-main">В корзину</a>
+									</div>
+								</div>
+							</li>
+							<li>
 								<div class="item-product">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-product__image">
@@ -445,13 +535,13 @@
 										<div class="price-new">440 ₽</div>
 										<div class="price-old">790 ₽</div>
 									</div>
-									<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+									<div class="bonus-product"><span>+500</span> бонусных рублей </div>
 									<div class="item-product__bottom">
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
-							</div>
-							<div class="col-6">
+							</li>
+							<li>
 								<div class="item-product">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-product__image">
@@ -459,16 +549,50 @@
 									</a>
 									<a href="#" class="item-product__name">Карта памяти Kingston micro SDHC 8 Gb...</a>
 									<div class="item-product__price">
-										<div class="price-new">440 ₽</div>
-										<div class="price-old">790 ₽</div>
+										<div class="price-new">360 ₽</div>
+										<div class="price-old">540 ₽</div>
 									</div>
-									<div class="bonus-product">+сумма бонусных рублей <span>500 ₽</span></div>
+									<div class="bonus-product"><span>+500</span> бонусных рублей </div>
 									<div class="item-product__bottom">
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
-							</div>
-						</div>
+							</li>
+							<li>
+								<div class="item-product">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-product__image">
+										<img src="img/accessory1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-product__name">Карта памяти Sandisk SDHC 16 Gb Class 10 ...</a>
+									<div class="item-product__price">
+										<div class="price-new">440 ₽</div>
+										<div class="price-old">790 ₽</div>
+									</div>
+									<div class="bonus-product"><span>+500</span> бонусных рублей </div>
+									<div class="item-product__bottom">
+										<a href="#" class="btn-main">В корзину</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-product">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-product__image">
+										<img src="img/accessory2.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-product__name">Карта памяти Kingston micro SDHC 8 Gb...</a>
+									<div class="item-product__price">
+										<div class="price-new">360 ₽</div>
+										<div class="price-old">540 ₽</div>
+									</div>
+									<div class="bonus-product"><span>+500</span> бонусных рублей </div>
+									<div class="item-product__bottom">
+										<a href="#" class="btn-main">В корзину</a>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -820,7 +944,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.12"></script>
+<script src="js/common.js?ver=1.13"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
