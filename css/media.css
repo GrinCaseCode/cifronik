@@ -21,7 +21,7 @@
     } 
     .banner {
      padding-left: 8px;
- }
+ } 
  .sale-circle {
      top: 5px;
      right: 5px;
@@ -37,7 +37,7 @@
 }
 .col-md-6 .banner__title {
     max-width: 156px;
-}
+} 
 .item-advantage__icon {
     width: 55px;
 }
@@ -859,7 +859,17 @@
 .category {
     padding-bottom: 15px;
 }
-
+.block-installment__title {
+    font-size: 15px;
+    line-height: 23px;
+}
+.block-installment {
+    padding-left: 15px;
+}
+.item-installment {
+    font-size: 14px;
+    line-height: 21px;
+}
 }
 
 /* Custom, iPhone Retina */
