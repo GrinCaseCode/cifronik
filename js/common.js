@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+//Правки
+$('.tabs-contacts a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-contact").fadeOut(0);
+		var selectTab3 = $(this).attr("href");
+		$(selectTab3).fadeIn(200);
+	});
+
+$('.link-block_feature').click(function(event) {
+		event.preventDefault();
+		if ($(".hidden-features").is(":hidden")) {
+			$(".hidden-features").slideDown(200);
+			$(this).html("Скрыть все характеристики");
+		} else {
+			$(".hidden-features").slideUp(200);
+			$(this).html("Показать все характеристики");
+		}
+	});
 
 //прилипающие меню
 var $menu = $(".header");
