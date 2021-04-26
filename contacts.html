@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.12" /> 
-	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+	<link rel="stylesheet" href="css/main.css?ver=1.22" /> 
+	<link rel="stylesheet" href="css/media.css?ver=1.22" />
 </head>
 <body>
 
@@ -45,7 +45,7 @@
 						</li>
 						<li><a href="#">Бонусы</a></li>
 					</ul>
-					<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
+					<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
 				</div>
 				<div class="header__bottom">
 					<a href="#" class="logo">
@@ -59,7 +59,7 @@
 						</form>
 					</div>
 					<div class="col-min header-buttons">
-						<a href="#" class="btn-header btn-header_user">
+						<a href="#callback" class="btn-header btn-header_user fancybox">
 							<img src="img/user.svg" alt="alt">
 							<span class="btn-header__text">Вход</span>
 						</a>
@@ -73,7 +73,7 @@
 							<span class="btn-basket__value">2</span>
 						</a>
 					</div>
-					<a href="tel:+79785099904" class="phone-btn"><i class="fas fa-phone"></i></a>
+					<a href="tel:+79780050201" class="phone-btn"><i class="fas fa-phone"></i></a>
 					<span class="btn_nav">
 						<span class='sandwich'>
 							<span class='sw-topper'></span>
@@ -104,7 +104,7 @@
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog3.svg" alt="alt"></span>Наушники, колонки и аудио <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog4.svg" alt="alt"></span>Аксессуары <i class="far fa-chevron-right"></i></a></li>
-					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.svg" alt="alt"></span>Гаджеты для дома <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.png" alt="alt"></span>Гаджеты для дома <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog6.svg" alt="alt"></span>Планшеты и ноутбуки <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog7.svg" alt="alt"></span>Телевизоры и видео <i class="far fa-chevron-right"></i></a></li>
 					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog8.svg" alt="alt"></span>Автотовары и электротранспорт  <i class="far fa-chevron-right"></i></a></li>
@@ -125,8 +125,7 @@
 					</li>
 					<li><a href="#">Бонусы</a></li>
 				</ul>
-				<a href="tel:+79785099904" class="phone-main">+7 978 509-99-04</a>
-				
+				<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
 			</div>
 		</header>
 
@@ -138,56 +137,98 @@
 						<div class="item-contact active">
 							<div class="item-contact__title">г. Феодосия <div class="item-contact__arrow"><i class="far fa-chevron-down"></i></div></div>
 							<div class="item-contact__content" style="display: block;">
-								<div class="item-contact__unit">
-									<p><strong>ул. Старшинова, 8А</strong></p>
-									<p>Телефон: <a href="tel:+79780112445">+7 978 011-24-45</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
-								<div class="item-contact__unit">
-									<p><strong>ул. Земская, 18</strong></p>
-									<p>Телефон: <a href="tel:+79780110108">+7 978 011-01-08</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
-								<div class="item-contact__unit">
-									<p><strong>ул. Нахимова, 2в</strong></p>
-									<p>Телефон: <a href="tel:+79780735115">+7 978 073-51-15</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
-								<div class="item-contact__unit">
-									<p><strong>ул. Симферопольское шоссе, 11</strong></p>
-									<p>Телефон: <a href="tel:+79786660609">+7 978 666-06-09</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
-								<div class="item-contact__unit">
-									<p><strong>ул. Крымская, 82и</strong></p>
-									<p>Телефон: <a href="tel:+79785099903">+7 978 509-99-03</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
+								<ul class="tabs-contacts">
+									<li class="active">
+										<a href="#tab_contact1">
+											<p><strong>ул. Старшинова, 8А</strong></p>
+											<p>Телефон: <strong>+7 978 011-24-45</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab_contact2">
+											<p><strong>ул. Земская, 18</strong></p>
+											<p>Телефон: <strong>+7 978 011-01-08</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab_contact3">
+											<p><strong>ул. Нахимова, 2в</strong></p>
+											<p>Телефон: <strong>+7 978 073-51-15</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab_contact4">
+											<p><strong>ул. Симферопольское шоссе, 11</strong></p>
+											<p>Телефон: <strong>+7 978 666-06-09</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+									<li>
+										<a href="#tab_contact5">
+											<p><strong>ул. Крымская, 82и</strong></p>
+											<p>Телефон: <strong>+7 978 509-99-03</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 						<div class="item-contact">
 							<div class="item-contact__title">г. Судак <div class="item-contact__arrow"><i class="far fa-chevron-down"></i></div></div>
 							<div class="item-contact__content">
-								<div class="item-contact__unit">
-									<p><strong>ул. Ленина, 35</strong></p>
-									<p>Телефон: <a href="tel:+79785099904">+7 978 509-99-04</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
+								<ul class="tabs-contacts">
+									<li>
+										<a href="#tab_contact6">
+											<p><strong>ул. Ленина, 35</strong></p>
+											<p>Телефон: <strong>+7 978 509-99-04</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 						<div class="item-contact">
 							<div class="item-contact__title">пгт Приморский <div class="item-contact__arrow"><i class="far fa-chevron-down"></i></div></div>
 							<div class="item-contact__content">
-								<div class="item-contact__unit">
-									<p><strong>ул. Южная, 9</strong></p>
-									<p>Телефон: <a href="tel:+79786191717">+7 978 619-17-17</a></p>
-									<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
-								</div>
+								<ul class="tabs-contacts">
+									<li>
+										<a href="#tab_contact7">
+											<p><strong>ул. Южная, 9</strong></p>
+											<p>Телефон: <strong>+7 978 619-17-17</strong></p>
+											<p>Режим работы: <strong>9:00 - 19:00, без выходных</strong></p>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-7">
-						<div id="map"></div>
+						<div class="tab-container-contact">
+							<div class="tab-pane-contact" id="tab_contact1">
+								<div id="map_contact1" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact2">
+								<div id="map_contact2" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact3">
+								<div id="map_contact3" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact4">
+								<div id="map_contact4" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact5">
+								<div id="map_contact5" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact6">
+								<div id="map_contact6" class="contact-map"></div>
+							</div>
+							<div class="tab-pane-contact" id="tab_contact7">
+								<div id="map_contact7" class="contact-map"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -303,92 +344,172 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.12"></script>
+<script src="js/common.js?ver=1.22"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script type="text/javascript">
-	ymaps.ready(init);
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact1', {
+				center: [45.026648, 35.383902],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Старшинова, 8А</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
 
-	function init () {
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact2', {
+				center: [45.027916, 35.381621],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Земская, 18</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
 
-		var myMap = new ymaps.Map("map", {
-			center: [45.030596, 35.381893],
-			zoom: 17,
-			controls: ['zoomControl']
-		}); 
-
-
-		var myGeoObjects = [];
-
-		myGeoObjects[0] = new ymaps.Placemark([45.032877, 35.381415],{
-			clusterCaption: 'Заголовок', 
-			balloonContent: '<p class="text-map">ул. Старшинова, 8А</p>'
-		},{
-			iconLayout: 'default#image',
-			iconImageHref: 'img/pin.svg',
-			hideIconOnBalloonOpen: false,
-			iconImageSize: [27, 36],
-			iconImageOffset: [-27, -36],
-			balloonOffset: [ -12, -36 ]
-
-		});
-
-		myGeoObjects[1] = new ymaps.Placemark([45.030596, 35.381893],{
-			clusterCaption: 'Заголовок', 
-			balloonContent: '<p class="text-map">ул. Старшинова, 8А</p>'
-		},{
-			iconLayout: 'default#image',
-			iconImageHref: 'img/pin.svg',
-			hideIconOnBalloonOpen: false,
-			iconImageSize: [27, 36],
-			iconImageOffset: [-5, -20],
-			balloonOffset: [ -12, -36 ]
-		});
-
-		myGeoObjects[2] = new ymaps.Placemark([45.029190, 35.382773],{
-			clusterCaption: 'Заголовок', 
-			balloonContent: '<p class="text-map">ул. Старшинова, 8А</p>'
-		},{
-			iconLayout: 'default#image',
-			iconImageHref: 'img/pin.svg',
-			hideIconOnBalloonOpen: false,
-			iconImageSize: [27, 36],
-			iconImageOffset: [-27, -36],
-			balloonOffset: [ -12, -36 ]
-		});
-
-		myGeoObjects[3] = new ymaps.Placemark([45.029480, 35.379160],{
-			clusterCaption: 'Заголовок', 
-			balloonContent: '<p class="text-map">ул. Старшинова, 8А</p>'
-		},{
-			iconLayout: 'default#image',
-			iconImageHref: 'img/pin.svg',
-			hideIconOnBalloonOpen: false,
-			iconImageSize: [27, 36],
-			iconImageOffset: [-27, -36],
-			balloonOffset: [ -12, -36 ]
-		});
-
-		myMap.behaviors.disable('scrollZoom');
-
-		var clusterIcons=[{
-			href:'/img/pin.png',
-			size:[27,36],
-			offset:[0,0]
-		}];
-
-		var clusterer = new ymaps.Clusterer({
-			clusterDisableClickZoom: false,
-			clusterOpenBalloonOnClick: false,
-			clusterBalloonContentLayout: 'cluster#balloonCarousel',
-			clusterBalloonPanelMaxMapArea: 0,
-			clusterBalloonContentLayoutWidth: 300,
-			clusterBalloonContentLayoutHeight: 200,
-			clusterBalloonPagerSize: 5
-		});
-
-		clusterer.add(myGeoObjects);
-		myMap.geoObjects.add(clusterer);
-	}
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact3', {
+				center: [45.027228, 35.380354],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Нахимова, 2в</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact4', {
+				center: [45.050188, 35.334854],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Симферопольское шоссе, 11</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact5', {
+				center: [45.051220, 35.373841],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Крымская, 82и</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact6', {
+				center: [45.019748, 35.399821],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Ленина, 35</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map_contact7', {
+				center: [45.026317, 35.368056],
+				zoom: 17
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Южная, 9</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin.svg',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [27, 36],
+				balloonOffset: [ 0, -36 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
 </script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
