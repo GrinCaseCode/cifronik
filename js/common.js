@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 //Правки
 $('.tabs-contacts a').click(function(event) {
 		event.preventDefault();
@@ -9,6 +8,36 @@ $('.tabs-contacts a').click(function(event) {
 		var selectTab3 = $(this).attr("href");
 		$(selectTab3).fadeIn(200);
 	});
+
+$('.btn-main_catalog').click(function(event) {
+		event.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
+
+/*scroll to tabs*/
+
+  {
+    if ($(window).width() < 768) { 
+
+      /*scroll to tabs*/
+
+      $('.tabs-contacts a').on( 'click', function(){ 
+        var el = $(this);
+        var dest = el.attr('href'); 
+        if(dest !== undefined && dest !== '') { 
+          $('html').animate({ 
+            scrollTop: $(dest).offset().top - 60
+        }, 500 // скорость прокрутки
+        );
+        }
+        return false;
+      });
+
+
+    }
+  }
+
 
 $('.link-block_feature').click(function(event) {
 		event.preventDefault();
@@ -24,49 +53,68 @@ $('.link-block_feature').click(function(event) {
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){
-	if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
+	if ( $(this).scrollTop() > 530 && $menu.hasClass("default") ){
 		$menu.removeClass("default").addClass("fixed");
-	} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+	} else if($(this).scrollTop() <= 530 && $menu.hasClass("fixed")) {
 		$menu.removeClass("fixed").addClass("default");
 	}
 
 });
 
-if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
+if ( $(this).scrollTop() > 530 && $menu.hasClass("default") ){
 	$menu.removeClass("default").addClass("fixed");
-} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+} else if($(this).scrollTop() <= 530 && $menu.hasClass("fixed")) {
 	$menu.removeClass("fixed").addClass("default");
 }
 
 
+$('.wrapper:not(.wrapper_opendsidebar) .btn-catalog').click(function(event) {
+		event.preventDefault();
+		$(this).toggleClass("active");
+		$(".dropdown-catalog").fadeToggle(0);
+	});
+
+$('.wrapper_opendsidebar .btn-catalog').click(function(event) {
+		event.preventDefault();
+		$(this).toggleClass("active");
+		if ($(".header").hasClass("fixed")) {
+	$(".dropdown-catalog").toggleClass("fixed");
+	} else {
+			$(".dropdown-catalog").slideDown(200);
+
+	}
+	});
+
+
+
 $(".item-contact__title").click(function(e) {
-		e.preventDefault();
-		$(".item-contact").removeClass("active");
-		$(".item-contact__content").slideUp(200);
-		if ($(this).siblings(".item-contact__content").is(":hidden")) {
-			$(this).parent().addClass("active");
-			$(this).siblings(".item-contact__content").slideDown(200);
+	e.preventDefault();
+	$(".item-contact").removeClass("active");
+	$(".item-contact__content").slideUp(200);
+	if ($(this).siblings(".item-contact__content").is(":hidden")) {
+		$(this).parent().addClass("active");
+		$(this).siblings(".item-contact__content").slideDown(200);
 
-		} else {
-			$(this).parent().removeClass("active");
-			$(this).siblings(".item-contact__content").slideUp(200);
+	} else {
+		$(this).parent().removeClass("active");
+		$(this).siblings(".item-contact__content").slideUp(200);
 
-		}
-	});
+	}
+});
 $(".item-question__name").click(function(e) {
-		e.preventDefault();
-		$(".item-question").removeClass("active");
-		$(".item-question__content").slideUp(200);
-		if ($(this).siblings(".item-question__content").is(":hidden")) {
-			$(this).parent().addClass("active");
-			$(this).siblings(".item-question__content").slideDown(200);
+	e.preventDefault();
+	$(".item-question").removeClass("active");
+	$(".item-question__content").slideUp(200);
+	if ($(this).siblings(".item-question__content").is(":hidden")) {
+		$(this).parent().addClass("active");
+		$(this).siblings(".item-question__content").slideDown(200);
 
-		} else {
-			$(this).parent().removeClass("active");
-			$(this).siblings(".item-question__content").slideUp(200);
+	} else {
+		$(this).parent().removeClass("active");
+		$(this).siblings(".item-question__content").slideUp(200);
 
-		}
-	});
+	}
+});
 
 
 	//плавный скролл
@@ -94,6 +142,7 @@ $(".item-question__name").click(function(e) {
 
 	$(".menu__haschild > a").click(function(e) {
 		e.preventDefault();
+		$(this).toggleClass("active");
 		$(this).siblings("ul").slideToggle(200);
 	});
 
@@ -105,52 +154,52 @@ $(".item-question__name").click(function(e) {
 	/*range slider*/
 
 	$(function() {
-var $range = $(".range-catalog_price .range-catalog__input"),
-$from = $(".range-catalog_price .control-input__from"),
-$to = $(".range-catalog_price .control-input__to"),
-min = 0,
-max = 200000;
-$range.ionRangeSlider({
-	type: "double",
-	min: min,
-	max: max,
-	from: 500,
-	to: 200000,
-	prettify_enabled: true,
-	onChange: function(data) {
-		updateValues()
-	}
-});
+		var $range = $(".range-catalog_price .range-catalog__input"),
+		$from = $(".range-catalog_price .control-input__from"),
+		$to = $(".range-catalog_price .control-input__to"),
+		min = 0,
+		max = 200000;
+		$range.ionRangeSlider({
+			type: "double",
+			min: min,
+			max: max,
+			from: 500,
+			to: 200000,
+			prettify_enabled: true,
+			onChange: function(data) {
+				updateValues()
+			}
+		});
 
 
-$range = $range.data("ionRangeSlider");
-var updateValues = function() {
-	var res = $range.result;
-	$from.val(res.from, true);
-	$to.val(res.to,true)
-};
-$from.on("focus", function() {
-	this.value = this.value;
-	this.focus();
-	this.selectionStart = this.value.length
-}).on("input", function() {
-	$range.update({
-		from: this.value
-	})
-}).on("blur", updateValues);
-$to.on("focus", function() {
-	this.value = this.value;
-	this.focus();
-	this.selectionStart = this.value.length
-}).on("input", function() {
-	$range.update({
-		to: this.value
-	})
-}).on("blur", updateValues)
-});
+		$range = $range.data("ionRangeSlider");
+		var updateValues = function() {
+			var res = $range.result;
+			$from.val(res.from, true);
+			$to.val(res.to,true)
+		};
+		$from.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				from: this.value
+			})
+		}).on("blur", updateValues);
+		$to.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				to: this.value
+			})
+		}).on("blur", updateValues)
+	});
 
 	$(".item-filter__head").click(function() {
-		$(this).parent().toggleClass("active");
+		$(this).parent().parent().toggleClass("active");
 		$(this).siblings(".item-filter__content").slideToggle(200);
 	});
 
@@ -164,18 +213,25 @@ $to.on("focus", function() {
 	});
 
 
-$(".footer__title").click(function() {
-		$(this).toggleClass("active");
-		$(this).siblings(".footer__content").slideToggle(200);
-	});
 
 
-$(".choose-value li").click(function() {
+	{
+		if ($(window).width() < 992) { 
+			$(".footer__title").click(function() {
+				$(this).toggleClass("active");
+				$(this).siblings(".footer__content").slideToggle(200);
+			});
+
+		}
+	}
+
+
+	$(".choose-value li").click(function() {
 		$(this).addClass("active");
 		$(this).siblings("li").removeClass("active");
 	});
 
-$('.tabs-card a').click(function(event) {
+	$('.tabs-card a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
@@ -184,12 +240,12 @@ $('.tabs-card a').click(function(event) {
 		$(selectTab).addClass("active");
 	});
 
-/*input file*/
-  $("input[type='file']").change(function(){
-    var filename_text = $(this).parent().siblings(".name-upload");
-    var filename = $(this).val().replace(/.*\\/, "");
-    filename_text.html(filename);
-  });
+	/*input file*/
+	$("input[type='file']").change(function(){
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.html(filename);
+	});
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -298,11 +354,11 @@ $('.tabs-card a').click(function(event) {
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		 verticalSwiping: true,
-		 vertical: true,
+		verticalSwiping: true,
+		vertical: true,
 		asNavFor: '.slider-for',
 		touchThreshold: 1000,
-		 focusOnSelect: true,
+		focusOnSelect: true,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 		responsive: [
@@ -311,7 +367,7 @@ $('.tabs-card a').click(function(event) {
 			settings: {
 				slidesToShow: 4,
 				verticalSwiping: false,
-		 vertical: false,
+				vertical: false,
 			}
 		}
 		]
