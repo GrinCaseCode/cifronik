@@ -23,7 +23,7 @@ body input:required:valid,
 body textarea:required:valid {
 	
 } 
-body {
+body { 
 	font-family: 'Google Sans' !important;
 	font-size: 16px;
 	overflow-x: hidden;
