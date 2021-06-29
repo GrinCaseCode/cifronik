@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 //Правки
 $('.tabs-contacts a').click(function(event) {
 		event.preventDefault();
