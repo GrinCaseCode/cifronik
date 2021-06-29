@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.27" /> 
+	<link rel="stylesheet" href="css/media.css?ver=1.27" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="header"> 
+			<div class="container">
+				<div class="header__top">
+					<div class="location-block">
+						<a href="#" class="location-value"><i class="far fa-map-marker-alt"></i><span>Феодосия</span></a>
+					</div>
+					<a href="#" class="link-header">Магазины</a>
+					<ul class="menu">
+						<li class="menu__btn"><a href="#">Акции</a></li>
+						<li class="menu__haschild">
+							<a href="#">Клиентам</a>
+							<ul>
+								<li><a href="#">Клиентам 1</a></li>
+								<li><a href="#">Клиентам 2</a></li>
+								<li><a href="#">Клиентам 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Бонусы</a></li>
+					</ul>
+					<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
+				</div>
+				<div class="header__bottom">
+					<a href="#" class="logo">
+						<img src="img/logo2.png" alt="alt">
+					</a>
+					<a href="#" class="btn-catalog"><i class="fas fa-bars"></i><span>каталог</span></a>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Поиск по сайту" required="required">
+							<button class="btn-search"><i class="far fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-min header-buttons">
+						<a href="#callback" class="btn-header btn-header_user fancybox">
+							<img src="img/user.svg" alt="alt">
+							<span class="btn-header__text">Вход</span>
+						</a>
+						<a href="#" class="btn-header btn-header_like">
+							<img src="img/like.svg" alt="alt">
+							<span class="btn-header__text">Избранное</span>
+						</a>
+						<a href="#" class="btn-header btn-header_basket">
+							<img src="img/cart.svg" alt="alt">
+							<span class="btn-header__text">Корзина</span>
+							<span class="btn-basket__value">2</span>
+						</a>
+					</div>
+					<a href="tel:+79780050201" class="phone-btn"><i class="fas fa-phone"></i></a>
+					<span class="btn_nav">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="form-search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту" required="required">
+						<button class="btn-search"><i class="far fa-search"></i></button>
+					</form>
+				</div>
+				<div class="header-buttons">
+					<a href="#" class="btn-header btn-header_user">
+						<img src="img/user.svg" alt="alt">
+						<span class="btn-header__text">Вход</span>
+					</a>
+					<a href="#" class="btn-header btn-header_like">
+						<img src="img/like.svg" alt="alt">
+						<span class="btn-header__text">Избранное</span>
+					</a>
+					<a href="#" class="btn-header btn-header_basket">
+						<img src="img/cart.svg" alt="alt">
+						<span class="btn-header__text">Корзина</span>
+						<span class="btn-basket__value">2</span>
+					</a>
+				</div>
+				<ul class="list-catalog">
+					<li class="active"><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog1.svg" alt="alt"></span>Смартфоны и телефоны <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog3.svg" alt="alt"></span>Наушники, колонки и аудио <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog4.svg" alt="alt"></span>Аксессуары <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.png" alt="alt"></span>Гаджеты для дома <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog6.svg" alt="alt"></span>Планшеты и ноутбуки <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog7.svg" alt="alt"></span>Телевизоры и видео <i class="far fa-chevron-right"></i></a></li>
+					<li><a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog8.svg" alt="alt"></span>Автотовары и электротранспорт  <i class="far fa-chevron-right"></i></a></li>
+				</ul>
+				<div class="location-block">
+					<a href="#" class="location-value"><i class="far fa-map-marker-alt"></i><span>Феодосия</span></a>
+				</div>
+				<a href="#" class="link-header">Магазины</a>
+				<ul class="menu">
+					<li class="menu__btn"><a href="#">Акции</a></li>
+					<li class="menu__haschild">
+						<a href="#">Клиентам</a>
+						<ul>
+							<li><a href="#">Клиентам 1</a></li>
+							<li><a href="#">Клиентам 2</a></li>
+							<li><a href="#">Клиентам 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Бонусы</a></li>
+				</ul>
+				<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
+			</div>
+		</header>
+
+		<div class="dropdown-catalog-wrap">
+			<div class="container">
+				<div class="dropdown-catalog">
+					<ul class="list-catalog">
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog1.svg" alt="alt"></span>Смартфоны и телефоны <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Смартфоны</strong></a>
+								<ul>
+									<li><a href="#">по брендам и моделям</a></li>
+								</ul>
+								<a href="#"><strong>Мобильные телефоны</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для смартфонов</strong></a>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog2.svg" alt="alt"></span>Смарт-часы <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Смарт-часы</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары</strong></a>
+								<ul>
+									<li><a href="#">Ремешки</a></li>
+									<li><a href="#">Защитные стекла</a></li>
+									<li><a href="#">Зарядные устройства</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog3.svg" alt="alt"></span>Наушники, колонки и аудио <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Наушники</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Наушники по типу</strong></a>
+								<ul>
+									<li><a href="#">Беспроводные</a></li>
+									<li><a href="#">Проводные</a></li>
+									<li><a href="#">TWS (True Wireless Stereo)</a></li>
+									<li><a href="#">Вкладыши и вакуумные</a></li>
+									<li><a href="#">Накладные</a></li>
+									<li><a href="#">Полноразмерные</a></li>
+									<li><a href="#">Геймерские</a></li>
+									<li><a href="#">Автомобильные гарнитуры</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для наушников</strong></a>
+								<ul>
+									<li><a href="#">Чехлы</a></li>
+								</ul>
+								<ul>
+									<li><a href="#"><strong>Умные колонки</strong></a></li>
+								</ul>
+								<a href="#"><strong>Портативные колонки</strong></a>
+								<ul>
+									<li><a href="#">по бендам</a></li>
+								</ul>
+								<a href="#"><strong>Аудиотехника</strong></a>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog4.svg" alt="alt"></span>Аксессуары <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Аксессуары для смартфонов</strong></a>
+								<ul>
+									<li><a href="#">Чехлы</a></li>
+									<li><a href="#">Карты памяти и накопители</a></li>
+									<li><a href="#">Кабели и переходники</a></li>
+									<li><a href="#">Защитные стекла</a></li>
+									<li><a href="#">Зарядные устройства</a></li>
+									<li><a href="#">Моноподы для селфи</a></li>
+									<li><a href="#">Попсокеты</a></li>
+									<li><a href="#">Power bank</a></li>
+									<li><a href="#">Кольцевые LED лампы</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для ноутбуков и ПК</strong></a>
+								<ul>
+									<li><a href="#">Мышки</a></li>
+									<li><a href="#">Wi-Fi роутеры</a></li>
+									<li><a href="#">Внешние жесткие диски</a></li>
+									<li><a href="#">Клавиатуры</a></li>
+									<li><a href="#">Флеш память USB</a></li>
+									<li><a href="#">Сумки и рюкзами</a></li>
+								</ul>
+								<ul>
+									<li><a href="#"><strong>Аксессуары для планшетов</strong></a></li>
+									<li><a href="#"><strong>Аксессуары для смарт-часов</strong></a></li>
+									<li><a href="#"><strong>Аксессуары для авто</strong></a></li>
+									<li><a href="#">Чехлы</a></li>
+									<li><a href="#">Ремешки</a></li>
+									<li><a href="#">Зарядные устройства</a></li>
+									<li><a href="#">Карты памяти</a></li>
+									<li><a href="#">Защитные стекла</a></li>
+									<li><a href="#">FM модуляторы</a></li>
+									<li><a href="#">Зарядные устройства</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для наушников</strong></a>
+								<ul>
+									<li><a href="#">Чехлы</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog5.png" alt="alt"></span>Гаджеты для дома <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<ul>
+									<li><a href="#"><strong>Умный дом Xiaomi</strong></a></li>
+								</ul>
+								<ul>
+									<li><a href="#"><strong>Товары по назначению</strong></a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog6.svg" alt="alt"></span>Планшеты и ноутбуки <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Планшеты</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Ноутбуки</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для ноутбуков и ПК</strong></a>
+								<ul>
+									<li><a href="#">Мышки</a></li>
+									<li><a href="#">Клавиатуры</a></li>
+									<li><a href="#">Wi-Fi роутеры</a></li>
+									<li><a href="#">Флеш память USB</a></li>
+									<li><a href="#">Внешние жесткие диски</a></li>
+									<li><a href="#">Сумки и рюкзаки</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для планшетов</strong></a>
+								<ul>
+									<li><a href="#">Чехлы</a></li>
+									<li><a href="#">Карты памяти</a></li>
+									<li><a href="#">Зарядные устройства</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog7.svg" alt="alt"></span>Телевизоры и видео <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Телевизоры</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Экшн-камеры</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="list-catalog__icon"><img src="img/ic_catalog8.svg" alt="alt"></span>Автотовары и электротранспорт  <i class="far fa-chevron-right"></i></a>
+							<div class="dropdown-inner">
+								<a href="#"><strong>Видеорегистраторы</strong></a>
+								<ul>
+									<li><a href="#">по брендам</a></li>
+								</ul>
+								<a href="#"><strong>Держатели</strong></a>
+								<ul>
+									<li><a href="#">по месту крепления</a></li>
+								</ul>
+								<a href="#"><strong>Аксессуары для авто</strong></a>
+								<ul>
+									<li><a href="#">Зарядные устройства</a></li>
+									<li><a href="#">FM модуляторы</a></li>
+								</ul>
+								<a href="#"><strong>Электротранспорт</strong></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="bonus-program">
+			<div class="container">
+				<div class="title-section">Бонусная программа</div>
+				<div class="row row_program">
+					<div class="col-lg-3 col-md-6">
+						<div class="item-program">
+							<div class="item-program__icon">
+								<img src="img/ic_program1.png" alt="alt">
+							</div>
+							<div class="item-program__title">Бонусные баллы</div>
+							<p>За каждый приобретенный товар, покупателю начисляются бонусные рубли</p>
+							<div class="sum">
+								<div class="sum__item">
+									<strong>1</strong>
+									<span>бонус</span>
+								</div>
+								<div class="sum__equal">=</div>
+								<div class="sum__item">
+									<strong>1</strong>
+									<span>рубль</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-program">
+							<div class="item-program__icon">
+								<img src="img/ic_program2.png" alt="alt">
+							</div>
+							<div class="item-program__title">Оплата бонусами</div>
+							<p> Бонусными рублями можно оплатить до 100% стоимости покупки</p>
+							<div class="item-program__circle">100%</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-program item-program_active">
+							<div class="item-program__icon">
+								<img src="img/ic_program3.png" alt="alt">
+							</div>
+							<div class="item-program__title">Регистрация</div>
+							<p> Зарегистрироваться в бонусной программе можно в любом магазине Цифроник, для этого необходимо только заполнить небольшую анкету.</p>
+							<a href="#" class="btn-main btn-main_page">Заполнить анкету</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="item-program">
+							<div class="item-program__icon">
+								<img src="img/ic_program4.png" alt="alt">
+							</div>
+							<div class="item-program__title">Узнать количество бонусов</div>
+							<p> Количество бонусных рублей можно узнать на сайте или в любом магазине, назвав только свой номер телефона.</p>
+							<a href="#" class="btn-main">Заполнить анкету</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="subscribe">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-4 col-lg-6">
+						<div class="subscribe__title">Получайте самые интересные предложения первыми!</div>
+					</div>
+					<div class="col-xl-4 col-lg-6">
+						<form>
+							<div class="form-subscribe">
+								<div class="item-form">
+									<input type="emai" placeholder="Введите E-mail" required="required">
+								</div>
+								<button class="btn-main" type="submit">Подписаться</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<div class="footer__col footer__col_first">
+						<a href="#" class="logo">
+							<img src="img/logo3.png" alt="alt">
+						</a>
+						<p><a href="#">Политика конфиденциальности</a></p>
+						<p>Все права защищены</p>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Цифроник <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Магазины</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Клиентам <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">Бонусная программа</a></li>
+								<li><a href="#">Подарочные карты</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Покупка в кредит</a></li>
+								<li><a href="#">Гарантия и обмен</a></li>
+								<li><a href="#">Trade-in</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">каталог <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="footer__list">
+								<li><a href="#">Смартфоны и телефоны</a></li>
+								<li><a href="#">Смарт-часы</a></li>
+								<li><a href="#">Наушники, колонки и аудио</a></li>
+								<li><a href="#">Аксессуары</a></li>
+								<li><a href="#">Гаджеты для дома</a></li>
+								<li><a href="#">Планшеты и ноутбуки</a></li>
+								<li><a href="#">Телевизоры и видео</a></li>
+								<li><a href="#">Автотовары и электротранспорт</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Контакты <i class="far fa-plus"></i></div>
+						<div class="footer__content">
+							<a href="tel:+79780050201" class="phone-main">+7 978 005-02-01</a>
+							<br>
+							<br>
+							<p>График работы: <br>с 9:00 до 19:00, <br>без выходных</p>
+							<div class="title-social">Мы в соцсетях</div>
+							<ul class="social-list">
+								<li><a href="#"><i class="fab fa-vk"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<p>г. Симферополь © Copyright  2021 г.</p>
+					<a href="#" class="btn_top"><i class="fa fa-arrow-up"></i></a>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.27"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
