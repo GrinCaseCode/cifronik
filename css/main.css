@@ -3428,7 +3428,7 @@ font-weight: 500;
 	z-index: 3;
 }
 .hint-content::before {
-	position: absolute;
+	position: absolute; 
 	display: block;
 	content: " ";
 	width: 25px;
@@ -3451,7 +3451,7 @@ opacity: 1;
 	top: 10px;
 	right: 10px;
 	font-size: 18px;
-	color: #666;
+	color: #666; 
 	position: absolute;
 }
 .bonus-program {
@@ -3552,4 +3552,100 @@ border: 10px solid #e70082
 }
 .item-program p {
 	margin-bottom: 15px;
+}
+
+/*support*/
+.support {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.support .title-section {
+	padding-bottom: 20px;
+}
+.row_support .row,
+.row_support {
+	margin: 0 -22px;
+}
+.row_support .row > div,
+.row_support > div {
+	padding: 0 22px;
+}
+.row_support > div  {
+	margin-bottom: 29px;
+}
+.support-main {
+		padding-top: 8px;
+	padding-left: 52px;
+	padding-right: 84px;
+	display: flex;
+	align-items: flex-end;
+	background-color: #8f00cc;
+border: 1px solid #f5f5f5;
+border-radius: 15px;
+color: #fff;
+}
+.support-main__content {
+	padding-right: 40px;
+	padding-bottom: 15px;
+	flex: 1;
+}
+.support-main .title-section {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+.support-main p {
+	font-size: 18px;
+line-height: 24px;
+font-weight: 500;
+}
+.title-block {
+	font-size: 24px;
+	font-weight: 500;
+}
+.social-page a {
+color: #000;
+display: inline-flex;
+align-items: center;
+}
+.social-page a i {
+	width: 35px;
+height: 35px;
+margin-right: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+color: #fff;
+transition: all 0.3s;
+background-color: #8f00cc;
+}
+.social-page li {
+	margin-top: 19px;
+}
+.title-min {
+	font-size: 20px;
+line-height: 30px;
+font-weight: 500;
+}
+.item-support .title-min {
+	margin-bottom: 12px;
+}
+.item-support p {
+	margin-top: 10px;
+}
+.item-support {
+	padding: 35px 45px;
+	background-color: #f5f5f5;
+border: 1px solid rgba(235,235,235,0.44);
+border-radius: 10px;
+min-height: 100%;
+}
+.item-support strong {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+}
+.item-support a:not(.phone-main) {
+	font-weight: 700;
+color: #0070f1;
 }
