@@ -28,7 +28,7 @@
     }
     .support-main__content {
         padding-bottom: 30px;
-    }
+    } 
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -877,6 +877,9 @@
 }
 .support .title-section {
     padding-bottom: 0;
+}
+.support-main .title-section {
+    padding-bottom: 10px;
 }
 }
 
