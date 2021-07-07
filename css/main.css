@@ -3320,6 +3320,7 @@ content: "\f111";
 .list-catalog li:nth-child(4) {
 	position: static;
 }
+/*
 .list-catalog li:nth-child(6) ul,
 .list-catalog li:nth-child(3) ul,
 .list-catalog li:nth-child(4) ul {
@@ -3328,6 +3329,7 @@ content: "\f111";
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+*/
 .list-catalog li:nth-child(6) ul li,
 .list-catalog li:nth-child(3) ul li,
 .list-catalog li:nth-child(4) ul li {
@@ -3650,4 +3652,23 @@ min-height: 100%;
 .item-support a:not(.phone-main) {
 	font-weight: 700;
 color: #0070f1;
+}
+
+/*menu*/
+.dropdown-inner {
+	min-height: 544px;
+	    min-width: 1098px;
+	    top: 0 !important;
+	    bottom: auto !important;
+	    left: 100%;
+	    width: initial;
+}
+.list-catalog li {
+	position: static;
+}
+.catalog-mobile {
+	display: none;
+}
+.list-catalog {
+	position: relative;
 }

@@ -29,6 +29,14 @@
     .support-main__content {
         padding-bottom: 30px;
     } 
+
+    /*menu*/
+    .dropdown-catalog {
+        max-width: 250px;
+    }
+    .dropdown-inner {
+        min-width: 902px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -179,6 +187,14 @@
 .item-support {
     padding: 25px;
 }
+
+ /*menu*/
+    .dropdown-catalog {
+        max-width: 193px;
+    }
+    .dropdown-inner {
+           min-width: 708px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -880,6 +896,19 @@
 }
 .support-main .title-section {
     padding-bottom: 10px;
+}
+
+/*menu*/
+.catalog-mobile {
+    padding: 0 15px;
+    padding-top: 20px;
+    display: block;
+}
+.catalog-mobile .list-catalog {
+    display: block;
+}
+.catalog-mobile .list-catalog .dropdown-inner {
+    display: none;
 }
 }
 
